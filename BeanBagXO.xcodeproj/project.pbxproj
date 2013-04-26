@@ -48,6 +48,9 @@
 		1A3A13DD17277958005E93B6 /* MMRegularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3A13DC17277958005E93B6 /* MMRegularViewController.m */; };
 		1A3A13DF17278425005E93B6 /* arrow-turn-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A13DE17278425005E93B6 /* arrow-turn-180.png */; };
 		1A3A13E517279437005E93B6 /* XObackgroundWithXO.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A13E417279437005E93B6 /* XObackgroundWithXO.png */; };
+		1A3A13F5172960A9005E93B6 /* eye-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A13F2172960A8005E93B6 /* eye-close.png */; };
+		1A3A13F6172960A9005E93B6 /* eye-half.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A13F3172960A8005E93B6 /* eye-half.png */; };
+		1A3A13F7172960A9005E93B6 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A13F4172960A8005E93B6 /* eye.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +105,9 @@
 		1A3A13DC17277958005E93B6 /* MMRegularViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRegularViewController.m; sourceTree = "<group>"; };
 		1A3A13DE17278425005E93B6 /* arrow-turn-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-turn-180.png"; sourceTree = "<group>"; };
 		1A3A13E417279437005E93B6 /* XObackgroundWithXO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XObackgroundWithXO.png; sourceTree = "<group>"; };
+		1A3A13F2172960A8005E93B6 /* eye-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-close.png"; sourceTree = "<group>"; };
+		1A3A13F3172960A8005E93B6 /* eye-half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-half.png"; sourceTree = "<group>"; };
+		1A3A13F4172960A8005E93B6 /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,9 @@
 		1A063027170FBBD5002892C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A3A13F2172960A8005E93B6 /* eye-close.png */,
+				1A3A13F3172960A8005E93B6 /* eye-half.png */,
+				1A3A13F4172960A8005E93B6 /* eye.png */,
 				1A3A13DE17278425005E93B6 /* arrow-turn-180.png */,
 				1A3A13D617241F31005E93B6 /* slingshot_tiny.jpeg */,
 				1A3A13D417241E45005E93B6 /* computer.png */,
@@ -299,6 +308,9 @@
 				1A3A13D717241F31005E93B6 /* slingshot_tiny.jpeg in Resources */,
 				1A3A13DF17278425005E93B6 /* arrow-turn-180.png in Resources */,
 				1A3A13E517279437005E93B6 /* XObackgroundWithXO.png in Resources */,
+				1A3A13F5172960A9005E93B6 /* eye-close.png in Resources */,
+				1A3A13F6172960A9005E93B6 /* eye-half.png in Resources */,
+				1A3A13F7172960A9005E93B6 /* eye.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

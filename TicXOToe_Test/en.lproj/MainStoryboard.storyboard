@@ -419,6 +419,25 @@
                                     <action selector="backButton:" destination="vmz-sL-dGz" eventType="touchUpInside" id="GCV-Qf-JWd"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="2" id="CyB-di-t1p">
+                                <rect key="frame" x="168" y="36" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="" image="eye-close.png" width="43.5"/>
+                                    <segment title="" image="eye-half.png"/>
+                                    <segment title="" image="eye.png"/>
+                                </segments>
+                                <connections>
+                                    <action selector="levelSelected:" destination="vmz-sL-dGz" eventType="valueChanged" id="E3l-bS-05s"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fqD-qL-aEu">
+                                <rect key="frame" x="168" y="7" width="127" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -432,6 +451,8 @@
                         <outlet property="button3_1_Outlet" destination="dkX-C7-mgl" id="JRq-Rj-Aay"/>
                         <outlet property="button3_2_Outlet" destination="j8v-hj-bo5" id="TCK-A4-xFV"/>
                         <outlet property="button3_3_Outlet" destination="Pi4-f6-LJd" id="sA8-a3-5Li"/>
+                        <outlet property="level_Label" destination="fqD-qL-aEu" id="pnG-oM-lrC"/>
+                        <outlet property="level_Outlet" destination="CyB-di-t1p" id="jF2-yG-LFe"/>
                         <outlet property="view" destination="zb4-hu-h9F" id="OmY-mE-lMi"/>
                     </connections>
                 </viewController>
@@ -446,49 +467,13 @@
         <image name="arrow-turn-180.png" width="16" height="16"/>
         <image name="beanbag.png" width="45" height="44"/>
         <image name="computer.png" width="16" height="16"/>
+        <image name="eye-close.png" width="16" height="16"/>
+        <image name="eye-half.png" width="16" height="16"/>
+        <image name="eye.png" width="16" height="16"/>
         <image name="group.png" width="16" height="16"/>
         <image name="slingshot1.png" width="54" height="80"/>
         <image name="slingshot_tiny.jpeg" width="23" height="35"/>
     </resources>
-    <classes>
-        <class className="MMMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMMainViewController.h"/>
-        </class>
-        <class className="MMRegularViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMRegularViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backButton:"/>
-                <relationship kind="action" name="getUserMove:"/>
-                <relationship kind="action" name="versusComputer:"/>
-                <relationship kind="outlet" name="button1_1_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button1_2_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button1_3_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_1_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_2_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_3_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_1_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_2_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_3_Outlet" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="MMViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backPressed:"/>
-                <relationship kind="outlet" name="beanBagOutlet" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="button1_1_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button1_2_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button1_3_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_1_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_2_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_3_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_1_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_2_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_3_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="slingshotOutlet" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
