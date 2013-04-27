@@ -144,59 +144,59 @@ int row,col;
 	for (UITouch *touch in touches) {
 		touchCount++;
         
-        if([touch locationInView:self.view].y >= 850 && [touch locationInView:self.view].y < 860)
+        if([touch locationInView:self.view].y >= 900 && [touch locationInView:self.view].y < 910)
         {
             [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot2"]];
         }
         else
-            if([touch locationInView:self.view].y >= 860 && [touch locationInView:self.view].y < 870)
+            if([touch locationInView:self.view].y >= 910 && [touch locationInView:self.view].y < 920)
             {
                 [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot3"]];
             }
             else
-                if([touch locationInView:self.view].y >= 870 && [touch locationInView:self.view].y < 880)
+                if([touch locationInView:self.view].y >= 920 && [touch locationInView:self.view].y < 930)
                 {
                     [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot4"]];
                 }
                 else
-                    if([touch locationInView:self.view].y >= 880 && [touch locationInView:self.view].y < 890)
+                    if([touch locationInView:self.view].y >= 930 && [touch locationInView:self.view].y < 940)
                     {
                         [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot5"]];
                     }
                     else
-                        if([touch locationInView:self.view].y >= 900 && [touch locationInView:self.view].y < 910)
+                        if([touch locationInView:self.view].y >= 940 && [touch locationInView:self.view].y < 950)
                         {
                             [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot6"]];
                         }
                         else
-                            if([touch locationInView:self.view].y >= 910 && [touch locationInView:self.view].y < 920)
+                            if([touch locationInView:self.view].y >= 950 && [touch locationInView:self.view].y < 960)
                             {
                                 [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot6"]];
                             }
                             else
-                                if([touch locationInView:self.view].y >= 920 && [touch locationInView:self.view].y < 930)
+                                if([touch locationInView:self.view].y >= 960 && [touch locationInView:self.view].y < 970)
                                 {
                                     [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot7"]];
                                 }
                                 else
-                                    if([touch locationInView:self.view].y >= 930 && [touch locationInView:self.view].y < 940)
+                                    if([touch locationInView:self.view].y >= 970 && [touch locationInView:self.view].y < 980)
                                     {
                                         [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot8"]];
                                     }
                                     else
-                                        if([touch locationInView:self.view].y >= 940 && [touch locationInView:self.view].y < 950)
+                                        if([touch locationInView:self.view].y >= 980 && [touch locationInView:self.view].y < 990)
                                         {
                                             [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot9"]];
                                         }
                                         else
-                                            if([touch locationInView:self.view].y >= 950)
+                                            if([touch locationInView:self.view].y >= 990)
                                             {
                                                 [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot10"]];
                                             }
         
-        if([touch locationInView:self.view].y > 850) //set X
+        if([touch locationInView:self.view].y > 900) //set X
         {
-            [slingshotOutlet setCenter:CGPointMake([touch locationInView:self.view].x, 850)];
+            [slingshotOutlet setCenter:CGPointMake([touch locationInView:self.view].x, 900)];
         }
 	}
 }
@@ -210,9 +210,11 @@ int row,col;
                      animations:^ void (void)
      {
          int dist = (beginY - endY);
-         [beanBagOutlet setFrame:CGRectMake(endX, 400 +(dist*3), 85, 85)];
+         
+         [beanBagOutlet setFrame:CGRectMake(endX, 800 +(dist*7), 100, 100)];
          [beanBagOutlet setTransform:CGAffineTransformMakeRotation(720)];
          [beanBagOutlet setTransform:CGAffineTransformIdentity];
+         
          
      } completion:^ void (BOOL isFinished) {
          
@@ -223,7 +225,7 @@ int row,col;
              
              //reset slingshot to center
              [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot1"]];
-             [slingshotOutlet setCenter:CGPointMake(411, 850)];
+             [slingshotOutlet setCenter:CGPointMake(411, 900)];
              [self.view setUserInteractionEnabled:YES];
          }
      }];
@@ -642,7 +644,7 @@ int row,col;
         endY = [touch locationInView:self.view].y;
         endX = [touch locationInView:self.view].x;
 		
-        if (beginY > 845 && beginY  < endY)
+        if (beginY > 600 && beginY  < endY)
         {
             [self.view setUserInteractionEnabled:NO];
             

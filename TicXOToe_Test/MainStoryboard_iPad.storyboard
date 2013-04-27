@@ -395,7 +395,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="slingshot1.png" id="xHh-1b-aOD">
-                                <rect key="frame" x="357" y="810" width="54" height="80"/>
+                                <rect key="frame" x="357" y="860" width="54" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -431,47 +431,6 @@
         <image name="eye.png" width="16" height="16"/>
         <image name="slingshot1.png" width="54" height="80"/>
     </resources>
-    <classes>
-        <class className="MMMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMMainViewController.h"/>
-        </class>
-        <class className="MMRegulariPadViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMRegulariPadViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backButton:"/>
-                <relationship kind="action" name="getUserMove:"/>
-                <relationship kind="action" name="level_Selected:"/>
-                <relationship kind="outlet" name="button1_1_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button1_2_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button1_3_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_1_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_2_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_3_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_1_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_2_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_3_Outlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="level_Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="level_Outlet" candidateClass="UISegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="MMSlingshotiPadViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMSlingshotiPadViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backPressed:"/>
-                <relationship kind="outlet" name="beanBagOutlet" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="button1_1_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button1_2_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button1_3_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_1_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_2_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button2_3_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_1_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_2_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="button3_3_Out" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="slingshotOutlet" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

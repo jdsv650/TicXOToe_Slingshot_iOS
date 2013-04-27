@@ -238,7 +238,7 @@ int row,col;
         case 1:
             if(col == 0)
             {
-                [button2_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPadpng"] forState:UIControlStateNormal];
+                [button2_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
             }
             else if(col == 1)
             {

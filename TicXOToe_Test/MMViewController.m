@@ -209,7 +209,7 @@ int row,col;
                      animations:^ void (void)
      {
          int dist = (beginY - endY);
-         [beanBagOutlet setFrame:CGRectMake(endX, 400 +(dist*3), 45, 45)];
+         [beanBagOutlet setFrame:CGRectMake(endX, 400 +(dist*3.5), 45, 45)];
          [beanBagOutlet setTransform:CGAffineTransformMakeRotation(720)];
          [beanBagOutlet setTransform:CGAffineTransformIdentity];
          
