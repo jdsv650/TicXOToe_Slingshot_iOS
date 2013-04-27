@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5eL-3Z-Wke">
-                                <rect key="frame" x="58" y="94" width="204" height="44"/>
+                                <rect key="frame" x="68" y="148" width="204" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title=" 1 Player" image="computer.png">
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="njn-f7-kKB">
-                                <rect key="frame" x="58" y="161" width="204" height="44"/>
+                                <rect key="frame" x="68" y="214" width="204" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title=" 2 Player" image="group.png">
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aex-hf-gRK">
-                                <rect key="frame" x="58" y="228" width="204" height="44"/>
+                                <rect key="frame" x="68" y="280" width="204" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title=" 2 Player Slingshot" image="slingshot_tiny.jpeg">
@@ -57,6 +57,14 @@
                                     <segue destination="2" kind="modal" id="cQ5-Sv-JVu"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TicXOToe.png" id="BqR-6h-s1V">
+                                <rect key="frame" x="20" y="-74" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="beanbag.png" id="6lF-xR-F1u">
+                                <rect key="frame" x="215" y="311" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -419,7 +427,7 @@
                                     <action selector="backButton:" destination="vmz-sL-dGz" eventType="touchUpInside" id="GCV-Qf-JWd"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="2" id="CyB-di-t1p">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" id="CyB-di-t1p">
                                 <rect key="frame" x="168" y="36" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -462,6 +470,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TicXOToe.png" width="280" height="280"/>
         <image name="XObackground.png" width="85" height="85"/>
         <image name="XObackgroundWithXO.png" width="85" height="85"/>
         <image name="arrow-turn-180.png" width="16" height="16"/>
@@ -484,7 +493,6 @@
                 <relationship kind="action" name="backButton:"/>
                 <relationship kind="action" name="getUserMove:"/>
                 <relationship kind="action" name="levelSelected:"/>
-                <relationship kind="action" name="versusComputer:"/>
                 <relationship kind="outlet" name="button1_1_Outlet" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button1_2_Outlet" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button1_3_Outlet" candidateClass="UIButton"/>

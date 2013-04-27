@@ -211,7 +211,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IDv-Gx-6aX">
-                                <rect key="frame" x="284" y="50" width="200" height="200"/>
+                                <rect key="frame" x="284" y="100" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <state key="normal" title="1 Player" backgroundImage="X_iPad.png">
@@ -252,6 +252,18 @@
                                     <segue destination="vhb-bM-hKh" kind="modal" id="hK1-qu-uYC"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="beanbag.png" id="5dn-5t-nuY">
+                                <rect key="frame" x="440" y="255" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="beanbag.png" id="Vwf-fX-HUb">
+                                <rect key="frame" x="219" y="395" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="beanbag.png" id="uwo-46-57c">
+                                <rect key="frame" x="559" y="562" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                     </view>
                 </viewController>
@@ -431,6 +443,47 @@
         <image name="eye.png" width="16" height="16"/>
         <image name="slingshot1.png" width="54" height="80"/>
     </resources>
+    <classes>
+        <class className="MMMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMMainViewController.h"/>
+        </class>
+        <class className="MMRegulariPadViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMRegulariPadViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButton:"/>
+                <relationship kind="action" name="getUserMove:"/>
+                <relationship kind="action" name="level_Selected:"/>
+                <relationship kind="outlet" name="button1_1_Outlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button1_2_Outlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button1_3_Outlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button2_1_Outlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button2_2_Outlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button2_3_Outlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button3_1_Outlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button3_2_Outlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button3_3_Outlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="level_Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="level_Outlet" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="MMSlingshotiPadViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMSlingshotiPadViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backPressed:"/>
+                <relationship kind="outlet" name="beanBagOutlet" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="button1_1_Out" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button1_2_Out" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button1_3_Out" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button2_1_Out" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button2_2_Out" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button2_3_Out" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button3_1_Out" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button3_2_Out" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button3_3_Out" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="slingshotOutlet" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
