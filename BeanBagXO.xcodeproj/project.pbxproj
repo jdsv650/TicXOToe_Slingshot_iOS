@@ -24,7 +24,7 @@
 		1A2BBAC717109A5B002A5768 /* xo_standard_IPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2BBAC617109A5B002A5768 /* xo_standard_IPad@2x.png */; };
 		1A2BBAC917109A67002A5768 /* xo_retina_iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2BBAC817109A67002A5768 /* xo_retina_iPad@2x.png */; };
 		1A2BBAFD17109D7C002A5768 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2BBAFC17109D7C002A5768 /* MainStoryboard_iPad.storyboard */; };
-		1A2BBB0017109EB4002A5768 /* MMiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2BBAFF17109EB4002A5768 /* MMiPadViewController.m */; };
+		1A2BBB0017109EB4002A5768 /* MMRegulariPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2BBAFF17109EB4002A5768 /* MMRegulariPadViewController.m */; };
 		1A2BBB041710AD5B002A5768 /* XObackground_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2BBB011710AD5B002A5768 /* XObackground_iPad.png */; };
 		1A2BBB051710AD5B002A5768 /* X_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2BBB021710AD5B002A5768 /* X_iPad.png */; };
 		1A2BBB061710AD5B002A5768 /* O_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2BBB031710AD5B002A5768 /* O_iPad.png */; };
@@ -51,6 +51,8 @@
 		1A3A13F5172960A9005E93B6 /* eye-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A13F2172960A8005E93B6 /* eye-close.png */; };
 		1A3A13F6172960A9005E93B6 /* eye-half.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A13F3172960A8005E93B6 /* eye-half.png */; };
 		1A3A13F7172960A9005E93B6 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A13F4172960A8005E93B6 /* eye.png */; };
+		1A73E3FF172B367D00199D3C /* MMiPadMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A73E3FE172B367D00199D3C /* MMiPadMainViewController.m */; };
+		1A73E402172B95A900199D3C /* MMSlingshotiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A73E401172B95A900199D3C /* MMSlingshotiPadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,8 +78,8 @@
 		1A2BBAC617109A5B002A5768 /* xo_standard_IPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "xo_standard_IPad@2x.png"; path = "../xo_standard_IPad@2x.png"; sourceTree = "<group>"; };
 		1A2BBAC817109A67002A5768 /* xo_retina_iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "xo_retina_iPad@2x.png"; path = "../xo_retina_iPad@2x.png"; sourceTree = "<group>"; };
 		1A2BBAFC17109D7C002A5768 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		1A2BBAFE17109EB4002A5768 /* MMiPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMiPadViewController.h; sourceTree = "<group>"; };
-		1A2BBAFF17109EB4002A5768 /* MMiPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMiPadViewController.m; sourceTree = "<group>"; };
+		1A2BBAFE17109EB4002A5768 /* MMRegulariPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRegulariPadViewController.h; sourceTree = "<group>"; };
+		1A2BBAFF17109EB4002A5768 /* MMRegulariPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRegulariPadViewController.m; sourceTree = "<group>"; };
 		1A2BBB011710AD5B002A5768 /* XObackground_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XObackground_iPad.png; sourceTree = "<group>"; };
 		1A2BBB021710AD5B002A5768 /* X_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X_iPad.png; sourceTree = "<group>"; };
 		1A2BBB031710AD5B002A5768 /* O_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = O_iPad.png; sourceTree = "<group>"; };
@@ -108,6 +110,10 @@
 		1A3A13F2172960A8005E93B6 /* eye-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-close.png"; sourceTree = "<group>"; };
 		1A3A13F3172960A8005E93B6 /* eye-half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-half.png"; sourceTree = "<group>"; };
 		1A3A13F4172960A8005E93B6 /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
+		1A73E3FD172B367D00199D3C /* MMiPadMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMiPadMainViewController.h; sourceTree = "<group>"; };
+		1A73E3FE172B367D00199D3C /* MMiPadMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMiPadMainViewController.m; sourceTree = "<group>"; };
+		1A73E400172B95A900199D3C /* MMSlingshotiPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSlingshotiPadViewController.h; sourceTree = "<group>"; };
+		1A73E401172B95A900199D3C /* MMSlingshotiPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSlingshotiPadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,11 +167,15 @@
 				1A3A13DC17277958005E93B6 /* MMRegularViewController.m */,
 				1A3A13D817277567005E93B6 /* MMMainViewController.h */,
 				1A3A13D917277567005E93B6 /* MMMainViewController.m */,
+				1A73E3FD172B367D00199D3C /* MMiPadMainViewController.h */,
+				1A73E3FE172B367D00199D3C /* MMiPadMainViewController.m */,
 				1A2BBAFC17109D7C002A5768 /* MainStoryboard_iPad.storyboard */,
+				1A73E400172B95A900199D3C /* MMSlingshotiPadViewController.h */,
+				1A73E401172B95A900199D3C /* MMSlingshotiPadViewController.m */,
 				1A06303B170FBBD5002892C4 /* MMViewController.h */,
 				1A06303C170FBBD5002892C4 /* MMViewController.m */,
-				1A2BBAFE17109EB4002A5768 /* MMiPadViewController.h */,
-				1A2BBAFF17109EB4002A5768 /* MMiPadViewController.m */,
+				1A2BBAFE17109EB4002A5768 /* MMRegulariPadViewController.h */,
+				1A2BBAFF17109EB4002A5768 /* MMRegulariPadViewController.m */,
 				1A063027170FBBD5002892C4 /* Supporting Files */,
 			);
 			path = TicXOToe_Test;
@@ -324,9 +334,11 @@
 				1A06302D170FBBD5002892C4 /* main.m in Sources */,
 				1A063031170FBBD5002892C4 /* MMAppDelegate.m in Sources */,
 				1A06303D170FBBD5002892C4 /* MMViewController.m in Sources */,
-				1A2BBB0017109EB4002A5768 /* MMiPadViewController.m in Sources */,
+				1A2BBB0017109EB4002A5768 /* MMRegulariPadViewController.m in Sources */,
 				1A3A13DA17277568005E93B6 /* MMMainViewController.m in Sources */,
 				1A3A13DD17277958005E93B6 /* MMRegularViewController.m in Sources */,
+				1A73E3FF172B367D00199D3C /* MMiPadMainViewController.m in Sources */,
+				1A73E402172B95A900199D3C /* MMSlingshotiPadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

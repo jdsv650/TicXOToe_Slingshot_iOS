@@ -8,7 +8,6 @@
 
 #import "MMRegularViewController.h"
 
-
 char tictac[3][3];
 int row,col;
 
@@ -26,14 +25,12 @@ int row,col;
     __weak IBOutlet UISegmentedControl *level_Outlet;
     __weak IBOutlet UILabel *level_Label;
   
-   // BOOL isVersusComp;
     BOOL isPlayerX;
 }
 
 - (IBAction)getUserMove:(id)sender;
 - (IBAction)backButton:(id)sender;
 - (IBAction)levelSelected:(id)sender;
-
 
 @end
 

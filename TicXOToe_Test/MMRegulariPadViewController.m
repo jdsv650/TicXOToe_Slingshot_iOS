@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 jdsv650. All rights reserved.
 //
 
-#import "MMiPadViewController.h"
+#import "MMRegulariPadViewController.h"
 
 char tictac[3][3];
 int row,col;
 
-@interface MMiPadViewController ()
+@interface MMRegulariPadViewController ()
 {
     __weak IBOutlet UIButton *button1_1_Outlet;
     __weak IBOutlet UIButton *button1_2_Outlet;
@@ -22,24 +22,42 @@ int row,col;
     __weak IBOutlet UIButton *button3_1_Outlet;
     __weak IBOutlet UIButton *button3_2_Outlet;
     __weak IBOutlet UIButton *button3_3_Outlet;
+    __weak IBOutlet UILabel *level_Label;
+    __weak IBOutlet UISegmentedControl *level_Outlet;
+    
     BOOL isVersusComp;
     BOOL isPlayerX;
 }
 
 - (IBAction)getUserMove:(id)sender;
-- (IBAction)versusComputer:(id)sender;
+- (IBAction)level_Selected:(id)sender;
+- (IBAction)backButton:(id)sender;
 
 @end
 
-@implementation MMiPadViewController
+@implementation MMRegulariPadViewController
+@synthesize isVersusComp;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self initialize];  // Clear board '-'
-    isVersusComp = YES;
+    // set in prepareForSegue isVersusComp = YES;
     isPlayerX = YES;
+    if(isVersusComp)
+    {
+        [level_Outlet setHidden:NO];
+        [level_Label setHidden:NO];
+    }
+    else
+    {
+        [level_Outlet setHidden:YES];
+        [level_Label setHidden:YES];
+    }
+    
 }
+
 
 
 - (void) initialize
@@ -65,71 +83,193 @@ int row,col;
 
 - (void) computerMove /* if no win or block make a move */
 {
-    if(tictac[2][1] == 'X' && tictac [1][2] =='X' && tictac[2][2] == '-') {
-        tictac[2][2] = 'O';
-        // drawO(2,2,2);
-        [button3_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-    }
-    else if(tictac[1][1] == '-')  {
-        tictac[1][1] = 'O';
-        // drawO(1,1,2);
-        [button2_2_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-        
-    }
-    else if(tictac[0][0] == '-' && (tictac[0][2] != 'X' || tictac[2][0] != 'X'))  {
-        tictac[0][0] = 'O';
-        // drawO(0,0,2);
-        [button1_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-        
-    }
-    else if (tictac[2][2] == '-' && (tictac[0][2] !='X' || tictac[2][0] !='X'))   {
-	    tictac[2][2] = 'O';
-	    //drawO(2,2,2);
-        [button3_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-        
-    }
-    else if (tictac[2][0] == '-'&& (tictac[0][0] != 'X' || tictac[2][2] != 'X')) {
-	    tictac[2][0] = 'O';
-	    //drawO(2,0,2);
-        [button3_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-        
-    }
-    else if (tictac[0][2] == '-' && (tictac[0][0] !='X' || tictac[2][2] !='X')) {
-	    tictac[0][2] = 'O';
-        // drawO(0,2,2);
-        [button1_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-        
-    }
-    else if (tictac[1][0] == '-') {
-	    tictac[1][0] = 'O';
-        // drawO(1,0,2);
-        [button2_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-        
-    }
-    else if (tictac[2][1] == '-') {
-        tictac[2][1] = 'O';
-        // drawO(2,1,2);
-        [button3_2_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-        
-    }
-    else if (tictac[1][2] == '-') {
-        tictac[1][2] = 'O';
-        // drawO(1,2,2);
-        [button2_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-        
-    }
-    else if (tictac[0][1] == '-')  {
-        tictac[0][1] = 'O';
-        // drawO(0,1,2);
-        [button1_2_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
-        
-    }
-    else
-    {
-        NSLog(@"TIE GAME\n");
-        [self showWin:'T'];
+    
+    int rowInd, colInd;
+    
+    if([level_Outlet selectedSegmentIndex] == 2) {
+        if(tictac[2][1] == 'X' && tictac [1][2] =='X' && tictac[2][2] == '-') {
+            tictac[2][2] = 'O';
+            // drawO(2,2,2);
+            [button3_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+        }
+        else if(tictac[1][1] == '-')  {
+            tictac[1][1] = 'O';
+            // drawO(1,1,2);
+            [button2_2_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            
+        }
+        else if(tictac[0][0] == '-' && (tictac[0][2] != 'X' || tictac[2][0] != 'X'))  {
+            tictac[0][0] = 'O';
+            // drawO(0,0,2);
+            [button1_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            
+        }
+        else if (tictac[2][2] == '-' && (tictac[0][2] !='X' || tictac[2][0] !='X'))   {
+            tictac[2][2] = 'O';
+            //drawO(2,2,2);
+            [button3_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            
+        }
+        else if (tictac[2][0] == '-'&& (tictac[0][0] != 'X' || tictac[2][2] != 'X')) {
+            tictac[2][0] = 'O';
+            //drawO(2,0,2);
+            [button3_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            
+        }
+        else if (tictac[0][2] == '-' && (tictac[0][0] !='X' || tictac[2][2] !='X')) {
+            tictac[0][2] = 'O';
+            // drawO(0,2,2);
+            [button1_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            
+        }
+        else if (tictac[1][0] == '-') {
+            tictac[1][0] = 'O';
+            // drawO(1,0,2);
+            [button2_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            
+        }
+        else if (tictac[2][1] == '-') {
+            tictac[2][1] = 'O';
+            // drawO(2,1,2);
+            [button3_2_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            
+        }
+        else if (tictac[1][2] == '-') {
+            tictac[1][2] = 'O';
+            // drawO(1,2,2);
+            [button2_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            
+        }
+        else if (tictac[0][1] == '-')  {
+            tictac[0][1] = 'O';
+            // drawO(0,1,2);
+            [button1_2_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            
+        }
+        else
+        {
+            NSLog(@"TIE GAME\n");
+            [self showWin:'T'];
+        }
     }
     
+    if([level_Outlet selectedSegmentIndex] == 0)  // just choose a random space
+    {
+        NSLog(@"Easy level");
+        
+        if([self isBoardFull])
+        {
+            [self showWin:'T'];
+            return;
+        }
+        
+        rowInd = arc4random() % 3;
+        colInd = arc4random() % 3;
+        
+        while (tictac[rowInd][colInd] != '-')
+        {
+            rowInd = arc4random() % 3;
+            colInd = arc4random() % 3;
+        }
+        
+        
+        tictac[rowInd][colInd] = 'O';
+        [self makeMoveWithRow:rowInd andCol:colInd];
+    }
+    
+    if([level_Outlet selectedSegmentIndex] == 1)  // medium level block and take win if avail
+    {
+        NSLog(@"Medium level");
+        
+        if([self isBoardFull])
+        {
+            [self showWin:'T'];
+            return;
+        }
+        
+        
+        if([self winPossible:('O')])
+        {
+            return;
+        }
+        else if ([self winPossible:('X')]) //block?
+        {
+            return;
+        }
+        else // no win or block make random move
+        {
+            rowInd = arc4random() % 3;
+            colInd = arc4random() % 3;
+            
+            while (tictac[rowInd][colInd] != '-')
+            {
+                rowInd = arc4random() % 3;
+                colInd = arc4random() % 3;
+            }
+            
+            
+            tictac[rowInd][colInd] = 'O';
+            [self makeMoveWithRow:rowInd andCol:colInd];
+        }
+    }
+    
+}
+
+
+-(void) makeMoveWithRow:(int) row andCol:(int) col
+{
+    switch (row) {
+        case 0:
+            if(col == 0)
+            {
+                [button1_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            }
+            else if(col == 1)
+            {
+                [button1_2_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+                
+            }
+            else if(col == 2)
+            {
+                [button1_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+                
+            }
+            break;
+        case 1:
+            if(col == 0)
+            {
+                [button2_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPadpng"] forState:UIControlStateNormal];
+            }
+            else if(col == 1)
+            {
+                [button2_2_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+                
+            }
+            else if(col == 2)
+            {
+                [button2_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+                
+            }
+            break;
+        case 2:
+            if(col == 0)
+            {
+                [button3_1_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+            }
+            else if(col == 1)
+            {
+                [button3_2_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+                
+            }
+            else if(col == 2)
+            {
+                [button3_3_Outlet setBackgroundImage:[UIImage imageNamed:@"O_iPad.png"] forState:UIControlStateNormal];
+                
+            }
+            break;
+        default:
+            break;
+    }
 }
 
 
@@ -152,6 +292,7 @@ int row,col;
     
     return (winner);
 }
+
 
 - (int) winPossible:(char) letter
 {
@@ -207,6 +348,7 @@ int row,col;
 }
 
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -214,13 +356,14 @@ int row,col;
 }
 
 - (void)viewDidUnload {
+    level_Label = nil;
+    level_Outlet = nil;
     [super viewDidUnload];
 }
 
 
 - (IBAction)getUserMove:(id)sender
 {
-    
     switch ([sender tag]) {
         case 11:
             row = 0;
@@ -303,7 +446,7 @@ int row,col;
             tictac[row][col] = 'X';  /* make move for 'X' */
         }
     
-    if(isVersusComp)
+    if(isVersusComp && [level_Outlet selectedSegmentIndex] == 2)
     {
         if ([self checkIfWon:('X') ] == 1)  {
             NSLog(@"X wins\n");
@@ -320,8 +463,60 @@ int row,col;
                     [self computerMove];
                 }
     }
+    else  if(isVersusComp && [level_Outlet selectedSegmentIndex] == 0)
+    {
+        if ([self checkIfWon:('X') ] == 1)  {
+            NSLog(@"X wins\n");
+            [self showWin:'X'];
+        }
+        else
+            if ([self checkIfWon:('O')] == 1) {
+                NSLog(@"O WINS\n");
+                [self showWin:'O'];
+            }
+            else
+            {
+                [self computerMove];
+                if ([self checkIfWon:('O')] == 1) {
+                    NSLog(@"O WINS\n");
+                    [self showWin:'O'];
+                }
+            }
+        
+    }
+    else  if(isVersusComp && [level_Outlet selectedSegmentIndex] == 1) //medium diff
+    {
+        if ([self checkIfWon:('X') ] == 1)  {
+            NSLog(@"X wins\n");
+            [self showWin:'X'];
+        }
+        else
+            if ([self checkIfWon:('O')] == 1) {
+                NSLog(@"O WINS\n");
+                [self showWin:'O'];
+            }
+            else
+            {
+                [self computerMove];
+                if ([self checkIfWon:('O')] == 1) {
+                    NSLog(@"O WINS\n");
+                    [self showWin:'O'];
+                }
+            }
+        
+    }
     
-    
+}
+
+
+- (IBAction)level_Selected:(id)sender
+{
+    [self initialize];
+}
+
+- (IBAction)backButton:(id)sender
+{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (BOOL) isBoardFull
@@ -338,22 +533,6 @@ int row,col;
         }
     
     return isFull;
-}
-
-- (IBAction)versusComputer:(id)sender
-{
-    //reset
-    [self initialize];
-    
-    if([sender isOn])
-    {
-        isVersusComp = YES;
-    }
-    else
-    {
-        isVersusComp = NO;
-    }
-    
 }
 
 

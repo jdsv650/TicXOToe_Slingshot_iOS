@@ -10,6 +10,8 @@
 
 
 
-@interface MMiPadViewController : UIViewController <UIAlertViewDelegate>
+@interface MMRegulariPadViewController : UIViewController <UIAlertViewDelegate, UIGestureRecognizerDelegate>
+
+@property BOOL isVersusComp;
 
 @end
