@@ -53,18 +53,32 @@
 		1A73E402172B95A900199D3C /* MMSlingshotiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A73E401172B95A900199D3C /* MMSlingshotiPadViewController.m */; };
 		1A73E40D172C100400199D3C /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A73E40B172C100300199D3C /* Default-Portrait~ipad.png */; };
 		1A73E40E172C100400199D3C /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A73E40C172C100300199D3C /* Default-Portrait@2x~ipad.png */; };
-		1A73E410172C1AFA00199D3C /* TicXOToe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A73E40F172C1AFA00199D3C /* TicXOToe.png */; };
+		1A792F6F17354459003B1141 /* poolwater2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A792F6C17354459003B1141 /* poolwater2.png */; };
+		1A792F7017354459003B1141 /* tube0_85.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A792F6D17354459003B1141 /* tube0_85.png */; };
+		1A792F72173544AC003B1141 /* noodleX_85.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A792F71173544AC003B1141 /* noodleX_85.png */; };
+		1A792F74173553BF003B1141 /* stamped_85.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A792F73173553BF003B1141 /* stamped_85.png */; };
+		1A792F7617355413003B1141 /* stampedConcrete.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1A792F7517355413003B1141 /* stampedConcrete.JPG */; };
+		1A792F8C17357B95003B1141 /* poolwater2_XOmarks.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A792F8B17357B95003B1141 /* poolwater2_XOmarks.png */; };
+		1A792F901735830C003B1141 /* poolWater.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A792F8F1735830C003B1141 /* poolWater.png */; };
+		1A7C719F1735DF6500B41EA7 /* poolX.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C719E1735DF6500B41EA7 /* poolX.png */; };
+		1A7C71A11735DF6C00B41EA7 /* poolO.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C71A01735DF6C00B41EA7 /* poolO.png */; };
+		1A7C71A31735E15400B41EA7 /* poolWaterWithXO.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C71A21735E15400B41EA7 /* poolWaterWithXO.png */; };
+		1A7C71AB1735F27500B41EA7 /* stars3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C71AA1735F27500B41EA7 /* stars3.png */; };
+		1A7C71AD1735F2B200B41EA7 /* stars2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C71AC1735F2B200B41EA7 /* stars2.png */; };
+		1A7C71AF1735F30200B41EA7 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C71AE1735F30200B41EA7 /* star.png */; };
+		1A7C71B11735F9E300B41EA7 /* ticxotoe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C71B01735F9E300B41EA7 /* ticxotoe.png */; };
+		1A7C71BD1736088A00B41EA7 /* beachsand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C71BC1736088A00B41EA7 /* beachsand.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A06301D170FBBD5002892C4 /* BeanBagXO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeanBagXO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A06301D170FBBD5002892C4 /* TicXOToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicXOToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A063020170FBBD5002892C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A063022170FBBD5002892C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A063024170FBBD5002892C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1A063028170FBBD5002892C4 /* BeanBagXO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeanBagXO-Info.plist"; sourceTree = "<group>"; };
+		1A063028170FBBD5002892C4 /* TicXOToe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicXOToe-Info.plist"; sourceTree = "<group>"; };
 		1A06302A170FBBD5002892C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A06302C170FBBD5002892C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A06302E170FBBD5002892C4 /* BeanBagXO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeanBagXO-Prefix.pch"; sourceTree = "<group>"; };
+		1A06302E170FBBD5002892C4 /* TicXOToe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TicXOToe-Prefix.pch"; sourceTree = "<group>"; };
 		1A06302F170FBBD5002892C4 /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
 		1A063030170FBBD5002892C4 /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
 		1A063036170FBBD5002892C4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -115,7 +129,21 @@
 		1A73E401172B95A900199D3C /* MMSlingshotiPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSlingshotiPadViewController.m; sourceTree = "<group>"; };
 		1A73E40B172C100300199D3C /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		1A73E40C172C100300199D3C /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
-		1A73E40F172C1AFA00199D3C /* TicXOToe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TicXOToe.png; sourceTree = "<group>"; };
+		1A792F6C17354459003B1141 /* poolwater2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poolwater2.png; sourceTree = "<group>"; };
+		1A792F6D17354459003B1141 /* tube0_85.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tube0_85.png; sourceTree = "<group>"; };
+		1A792F71173544AC003B1141 /* noodleX_85.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noodleX_85.png; sourceTree = "<group>"; };
+		1A792F73173553BF003B1141 /* stamped_85.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamped_85.png; sourceTree = "<group>"; };
+		1A792F7517355413003B1141 /* stampedConcrete.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stampedConcrete.JPG; sourceTree = "<group>"; };
+		1A792F8B17357B95003B1141 /* poolwater2_XOmarks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poolwater2_XOmarks.png; sourceTree = "<group>"; };
+		1A792F8F1735830C003B1141 /* poolWater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poolWater.png; sourceTree = "<group>"; };
+		1A7C719E1735DF6500B41EA7 /* poolX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poolX.png; sourceTree = "<group>"; };
+		1A7C71A01735DF6C00B41EA7 /* poolO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poolO.png; sourceTree = "<group>"; };
+		1A7C71A21735E15400B41EA7 /* poolWaterWithXO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poolWaterWithXO.png; sourceTree = "<group>"; };
+		1A7C71AA1735F27500B41EA7 /* stars3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars3.png; sourceTree = "<group>"; };
+		1A7C71AC1735F2B200B41EA7 /* stars2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars2.png; sourceTree = "<group>"; };
+		1A7C71AE1735F30200B41EA7 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		1A7C71B01735F9E300B41EA7 /* ticxotoe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticxotoe.png; sourceTree = "<group>"; };
+		1A7C71BC1736088A00B41EA7 /* beachsand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beachsand.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +172,7 @@
 		1A06301E170FBBD5002892C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A06301D170FBBD5002892C4 /* BeanBagXO.app */,
+				1A06301D170FBBD5002892C4 /* TicXOToe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,10 +198,10 @@
 				1A3A13D817277567005E93B6 /* MMMainViewController.h */,
 				1A3A13D917277567005E93B6 /* MMMainViewController.m */,
 				1A73E3FD172B367D00199D3C /* MMiPadMainViewController.h */,
-				1A73E3FE172B367D00199D3C /* MMiPadMainViewController.m */,
 				1A2BBAFC17109D7C002A5768 /* MainStoryboard_iPad.storyboard */,
 				1A73E400172B95A900199D3C /* MMSlingshotiPadViewController.h */,
 				1A73E401172B95A900199D3C /* MMSlingshotiPadViewController.m */,
+				1A73E3FE172B367D00199D3C /* MMiPadMainViewController.m */,
 				1A06303B170FBBD5002892C4 /* MMViewController.h */,
 				1A06303C170FBBD5002892C4 /* MMViewController.m */,
 				1A2BBAFE17109EB4002A5768 /* MMRegulariPadViewController.h */,
@@ -186,7 +214,19 @@
 		1A063027170FBBD5002892C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1A73E40F172C1AFA00199D3C /* TicXOToe.png */,
+				1A7C71BC1736088A00B41EA7 /* beachsand.png */,
+				1A7C71B01735F9E300B41EA7 /* ticxotoe.png */,
+				1A7C71AA1735F27500B41EA7 /* stars3.png */,
+				1A7C71AC1735F2B200B41EA7 /* stars2.png */,
+				1A7C71AE1735F30200B41EA7 /* star.png */,
+				1A792F8F1735830C003B1141 /* poolWater.png */,
+				1A7C71A21735E15400B41EA7 /* poolWaterWithXO.png */,
+				1A792F8B17357B95003B1141 /* poolwater2_XOmarks.png */,
+				1A792F7517355413003B1141 /* stampedConcrete.JPG */,
+				1A792F73173553BF003B1141 /* stamped_85.png */,
+				1A792F6C17354459003B1141 /* poolwater2.png */,
+				1A792F71173544AC003B1141 /* noodleX_85.png */,
+				1A792F6D17354459003B1141 /* tube0_85.png */,
 				1A3A13F2172960A8005E93B6 /* eye-close.png */,
 				1A3A13F3172960A8005E93B6 /* eye-half.png */,
 				1A3A13F4172960A8005E93B6 /* eye.png */,
@@ -211,10 +251,10 @@
 				1A2BBAB1171036BB002A5768 /* X.png */,
 				1A2BBAB2171036BB002A5768 /* XObackground.png */,
 				1A3A13E417279437005E93B6 /* XObackgroundWithXO.png */,
-				1A063028170FBBD5002892C4 /* BeanBagXO-Info.plist */,
+				1A063028170FBBD5002892C4 /* TicXOToe-Info.plist */,
 				1A063029170FBBD5002892C4 /* InfoPlist.strings */,
 				1A06302C170FBBD5002892C4 /* main.m */,
-				1A06302E170FBBD5002892C4 /* BeanBagXO-Prefix.pch */,
+				1A06302E170FBBD5002892C4 /* TicXOToe-Prefix.pch */,
 				1A063036170FBBD5002892C4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -223,6 +263,8 @@
 		1A3A13BD1721A453005E93B6 /* SlingShots */ = {
 			isa = PBXGroup;
 			children = (
+				1A7C719E1735DF6500B41EA7 /* poolX.png */,
+				1A7C71A01735DF6C00B41EA7 /* poolO.png */,
 				1A3A13BE1721A453005E93B6 /* slingshot1.png */,
 				1A3A13C01721A453005E93B6 /* slingshot2.png */,
 				1A3A13C11721A453005E93B6 /* slingshot3.png */,
@@ -240,9 +282,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A06301C170FBBD5002892C4 /* BeanBagXO */ = {
+		1A06301C170FBBD5002892C4 /* TicXOToe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A063040170FBBD5002892C4 /* Build configuration list for PBXNativeTarget "BeanBagXO" */;
+			buildConfigurationList = 1A063040170FBBD5002892C4 /* Build configuration list for PBXNativeTarget "TicXOToe" */;
 			buildPhases = (
 				1A063019170FBBD5002892C4 /* Sources */,
 				1A06301A170FBBD5002892C4 /* Frameworks */,
@@ -252,9 +294,9 @@
 			);
 			dependencies = (
 			);
-			name = BeanBagXO;
+			name = TicXOToe;
 			productName = TicXOToe_Test;
-			productReference = 1A06301D170FBBD5002892C4 /* BeanBagXO.app */;
+			productReference = 1A06301D170FBBD5002892C4 /* TicXOToe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +309,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = jdsv650;
 			};
-			buildConfigurationList = 1A063018170FBBD5002892C4 /* Build configuration list for PBXProject "BeanBagXO" */;
+			buildConfigurationList = 1A063018170FBBD5002892C4 /* Build configuration list for PBXProject "TicXOToe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -279,7 +321,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A06301C170FBBD5002892C4 /* BeanBagXO */,
+				1A06301C170FBBD5002892C4 /* TicXOToe */,
 			);
 		};
 /* End PBXProject section */
@@ -324,7 +366,21 @@
 				1A3A13F7172960A9005E93B6 /* eye.png in Resources */,
 				1A73E40D172C100400199D3C /* Default-Portrait~ipad.png in Resources */,
 				1A73E40E172C100400199D3C /* Default-Portrait@2x~ipad.png in Resources */,
-				1A73E410172C1AFA00199D3C /* TicXOToe.png in Resources */,
+				1A792F6F17354459003B1141 /* poolwater2.png in Resources */,
+				1A792F7017354459003B1141 /* tube0_85.png in Resources */,
+				1A792F72173544AC003B1141 /* noodleX_85.png in Resources */,
+				1A792F74173553BF003B1141 /* stamped_85.png in Resources */,
+				1A792F7617355413003B1141 /* stampedConcrete.JPG in Resources */,
+				1A792F8C17357B95003B1141 /* poolwater2_XOmarks.png in Resources */,
+				1A792F901735830C003B1141 /* poolWater.png in Resources */,
+				1A7C719F1735DF6500B41EA7 /* poolX.png in Resources */,
+				1A7C71A11735DF6C00B41EA7 /* poolO.png in Resources */,
+				1A7C71A31735E15400B41EA7 /* poolWaterWithXO.png in Resources */,
+				1A7C71AB1735F27500B41EA7 /* stars3.png in Resources */,
+				1A7C71AD1735F2B200B41EA7 /* stars2.png in Resources */,
+				1A7C71AF1735F30200B41EA7 /* star.png in Resources */,
+				1A7C71B11735F9E300B41EA7 /* ticxotoe.png in Resources */,
+				1A7C71BD1736088A00B41EA7 /* beachsand.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,10 +485,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TicXOToe_Test/BeanBagXO-Prefix.pch";
-				INFOPLIST_FILE = "TicXOToe_Test/BeanBagXO-Info.plist";
+				GCC_PREFIX_HEADER = "TicXOToe_Test/TicXOToe-Prefix.pch";
+				INFOPLIST_FILE = "TicXOToe_Test/TicXOToe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = BeanBagXO;
+				PRODUCT_NAME = TicXOToe;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -443,10 +499,10 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James Donner";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TicXOToe_Test/BeanBagXO-Prefix.pch";
-				INFOPLIST_FILE = "TicXOToe_Test/BeanBagXO-Info.plist";
+				GCC_PREFIX_HEADER = "TicXOToe_Test/TicXOToe-Prefix.pch";
+				INFOPLIST_FILE = "TicXOToe_Test/TicXOToe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = BeanBagXO;
+				PRODUCT_NAME = TicXOToe;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "197714EF-99E5-4BCE-8AE1-28C8A2362B87";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -456,7 +512,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A063018170FBBD5002892C4 /* Build configuration list for PBXProject "BeanBagXO" */ = {
+		1A063018170FBBD5002892C4 /* Build configuration list for PBXProject "TicXOToe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A06303E170FBBD5002892C4 /* Debug */,
@@ -465,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A063040170FBBD5002892C4 /* Build configuration list for PBXNativeTarget "BeanBagXO" */ = {
+		1A063040170FBBD5002892C4 /* Build configuration list for PBXNativeTarget "TicXOToe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A063041170FBBD5002892C4 /* Debug */,

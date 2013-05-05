@@ -28,6 +28,10 @@ int row,col;
     int beginX, endX;
     UITouch *beginTouch;
     UITouch *endTouch;
+    
+    NSString *buttonBackStr;
+    NSString *buttonXStr;
+    NSString *buttonOStr;
 }
 
 - (IBAction)backPressed:(id)sender;
@@ -39,6 +43,12 @@ int row,col;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"beachsand.png"]];
+    
+    buttonBackStr = @"poolWaterWithXO.png";
+    buttonXStr = @"poolX.png";
+    buttonOStr = @"poolO.png";
 
     [beanBagOutlet setHidden:YES];
     [self initialize];  // clear board ...
@@ -53,15 +63,15 @@ int row,col;
         for(j=0; j<3; j++)
             tictac[i][j] = '-';
     
-    [button1_1_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
-    [button1_2_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
-    [button1_3_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
-    [button2_1_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
-    [button2_2_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
-    [button2_3_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
-    [button3_1_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
-    [button3_2_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
-    [button3_3_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+    [button1_1_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
+    [button1_2_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
+    [button1_3_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
+    [button2_1_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
+    [button2_2_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
+    [button2_3_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
+    [button3_1_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
+    [button3_2_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
+    [button3_3_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
     
 }
 
@@ -107,7 +117,7 @@ int row,col;
                                  otherButtonTitles:nil];
     }
     
-    alert.transform = CGAffineTransformMakeTranslation(0, -140);
+    alert.transform = CGAffineTransformMakeTranslation(0, -160);
  
     [alert show];
 }
@@ -311,153 +321,153 @@ int row,col;
                     if(tictac[0][0] == 'X')
                     {
                         tictac[0][0] = 'O';
-                        [button1_1_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState: UIControlStateDisabled];
+                        [button1_1_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState: UIControlStateDisabled];
                     }
                     else if(tictac[0][0] == 'O')
                     {
                         tictac[0][0] = '-';
-                        [button1_1_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+                        [button1_1_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
                     }
                     else if(tictac[0][0] == '-')
                     {
                         tictac[0][0] = 'X';
-                        [button1_1_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                        [button1_1_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                     }
                     break;
                  case 120:
                     if(tictac[0][1] == 'X')
                     {
                         tictac[0][1] = 'O';
-                        [button1_2_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState: UIControlStateDisabled];
+                        [button1_2_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState: UIControlStateDisabled];
                     }
                     else if(tictac[0][1] == 'O')
                     {
                         tictac[0][1] = '-';
-                        [button1_2_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+                        [button1_2_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
                     }
                     else if(tictac[0][1] == '-')
                     {
                         tictac[0][1] = 'X';
-                        [button1_2_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                        [button1_2_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                     }
                     break;
                  case 130:
                     if(tictac[0][2] == 'X')
                     {
                         tictac[0][2] = 'O';
-                        [button1_3_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState: UIControlStateDisabled];
+                        [button1_3_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState: UIControlStateDisabled];
                     }
                     else if(tictac[0][2] == 'O')
                     {
                         tictac[0][2] = '-';
-                        [button1_3_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+                        [button1_3_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
                     }
                     else if(tictac[0][2] == '-')
                     {
                         tictac[0][2] = 'X';
-                        [button1_3_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                        [button1_3_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                     }
                     break;
                 case 210:
                     if(tictac[1][0] == 'X')
                     {
                         tictac[1][0] = 'O';
-                        [button2_1_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState: UIControlStateDisabled];
+                        [button2_1_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState: UIControlStateDisabled];
                     }
                     else if(tictac[1][0] == 'O')
                     {
                         tictac[1][0] = '-';
-                        [button2_1_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+                        [button2_1_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
                     }
                     else if(tictac[1][0] == '-')
                     {
                         tictac[1][0] = 'X';
-                        [button2_1_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                        [button2_1_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                     }
                     break;
                 case 220:
                     if(tictac[1][1] == 'X')
                     {
                         tictac[1][1] = 'O';
-                        [button2_2_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState: UIControlStateDisabled];
+                        [button2_2_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState: UIControlStateDisabled];
                     }
                     else if(tictac[1][1] == 'O')
                     {
                         tictac[1][1] = '-';
-                        [button2_2_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+                        [button2_2_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
                     }
                     else if(tictac[1][1] == '-')
                     {
                         tictac[1][1] = 'X';
-                        [button2_2_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                        [button2_2_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                     }
                     break;
                 case 230:
                     if(tictac[1][2] == 'X')
                     {
                         tictac[1][2] = 'O';
-                        [button2_3_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState: UIControlStateDisabled];
+                        [button2_3_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState: UIControlStateDisabled];
                     }
                     else if(tictac[1][2] == 'O')
                     {
                         tictac[1][2] = '-';
-                        [button2_3_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+                        [button2_3_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
                     }
                     else if(tictac[1][2] == '-')
                     {
                         tictac[1][2] = 'X';
-                        [button2_3_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                        [button2_3_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                     }
                     break;
                 case 310:
                     if(tictac[2][0] == 'X')
                     {
                         tictac[2][0] = 'O';
-                        [button3_1_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState: UIControlStateDisabled];
+                        [button3_1_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState: UIControlStateDisabled];
                     }
                     else if(tictac[2][0] == 'O')
                     {
                         tictac[2][0] = '-';
-                        [button3_1_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+                        [button3_1_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
                     }
                     else if(tictac[2][0] == '-')
                     {
                         tictac[2][0] = 'X';
-                        [button3_1_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                        [button3_1_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                     }
                     break;
                 case 320:
                     if(tictac[2][1] == 'X')
                     {
                         tictac[2][1] = 'O';
-                        [button3_2_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState: UIControlStateDisabled];
+                        [button3_2_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState: UIControlStateDisabled];
                     }
                     else if(tictac[2][1] == 'O')
                     {
                         tictac[2][1] = '-';
-                        [button3_2_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+                        [button3_2_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
                     }
                     else if(tictac[2][1] == '-')
                     {
                         tictac[2][1] = 'X';
-                        [button3_2_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                        [button3_2_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                     }
                     break;
                 case 330:
                     if(tictac[2][2] == 'X')
                     {
                         tictac[2][2] = 'O';
-                        [button3_3_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState: UIControlStateDisabled];
+                        [button3_3_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState: UIControlStateDisabled];
                     }
                     else if(tictac[2][2] == 'O')
                     {
                         tictac[2][2] = '-';
-                        [button3_3_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState:UIControlStateDisabled];
+                        [button3_3_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState:UIControlStateDisabled];
                     }
                     else if(tictac[2][2] == '-')
                     {
                         tictac[2][2] = 'X';
-                        [button3_3_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                        [button3_3_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                     }
                     break;
                 default:
@@ -476,153 +486,153 @@ int row,col;
                 if(tictac[0][0] == 'X')
                 {
                     tictac[0][0] = '-';
-                    [button1_1_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState: UIControlStateDisabled];
+                    [button1_1_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState: UIControlStateDisabled];
                 }
                 else if(tictac[0][0] == 'O')
                 {
                     tictac[0][0] = 'X';
-                    [button1_1_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                    [button1_1_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                 }
                 else if(tictac[0][0] == '-')
                 {
                     tictac[0][0] = 'O';
-                    [button1_1_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState:UIControlStateDisabled];
+                    [button1_1_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState:UIControlStateDisabled];
                 }
                 break;
             case 120:
                 if(tictac[0][1] == 'X')
                 {
                     tictac[0][1] = '-';
-                    [button1_2_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState: UIControlStateDisabled];
+                    [button1_2_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState: UIControlStateDisabled];
                 }
                 else if(tictac[0][1] == 'O')
                 {
                     tictac[0][1] = 'X';
-                    [button1_2_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                    [button1_2_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                 }
                 else if(tictac[0][1] == '-')
                 {
                     tictac[0][1] = 'O';
-                    [button1_2_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState:UIControlStateDisabled];
+                    [button1_2_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState:UIControlStateDisabled];
                 }
                 break;
             case 130:
                 if(tictac[0][2] == 'X')
                 {
                     tictac[0][2] = '-';
-                    [button1_3_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState: UIControlStateDisabled];
+                    [button1_3_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState: UIControlStateDisabled];
                 }
                 else if(tictac[0][2] == 'O')
                 {
                     tictac[0][2] = 'X';
-                    [button1_3_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                    [button1_3_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                 }
                 else if(tictac[0][2] == '-')
                 {
                     tictac[0][2] = 'O';
-                    [button1_3_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState:UIControlStateDisabled];
+                    [button1_3_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState:UIControlStateDisabled];
                 }
                 break;
             case 210:
                 if(tictac[1][0] == 'X')
                 {
                     tictac[1][0] = '-';
-                    [button2_1_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState: UIControlStateDisabled];
+                    [button2_1_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState: UIControlStateDisabled];
                 }
                 else if(tictac[1][0] == 'O')
                 {
                     tictac[1][0] = 'X';
-                    [button2_1_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                    [button2_1_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                 }
                 else if(tictac[1][0] == '-')
                 {
                     tictac[1][0] = 'O';
-                    [button2_1_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState:UIControlStateDisabled];
+                    [button2_1_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState:UIControlStateDisabled];
                 }
                 break;
             case 220:
                 if(tictac[1][1] == 'X')
                 {
                     tictac[1][1] = '-';
-                    [button2_2_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState: UIControlStateDisabled];
+                    [button2_2_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState: UIControlStateDisabled];
                 }
                 else if(tictac[1][1] == 'O')
                 {
                     tictac[1][1] = 'X';
-                    [button2_2_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                    [button2_2_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                 }
                 else if(tictac[1][1] == '-')
                 {
                     tictac[1][1] = 'O';
-                    [button2_2_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState:UIControlStateDisabled];
+                    [button2_2_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState:UIControlStateDisabled];
                 }
                 break;
             case 230:
                 if(tictac[1][2] == 'X')
                 {
                     tictac[1][2] = '-';
-                    [button2_3_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState: UIControlStateDisabled];
+                    [button2_3_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState: UIControlStateDisabled];
                 }
                 else if(tictac[1][2] == 'O')
                 {
                     tictac[1][2] = 'X';
-                    [button2_3_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                    [button2_3_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                 }
                 else if(tictac[1][2] == '-')
                 {
                     tictac[1][2] = 'O';
-                    [button2_3_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState:UIControlStateDisabled];
+                    [button2_3_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState:UIControlStateDisabled];
                 }
                 break;
             case 310:
                 if(tictac[2][0] == 'X')
                 {
                     tictac[2][0] = '-';
-                    [button3_1_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState: UIControlStateDisabled];
+                    [button3_1_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState: UIControlStateDisabled];
                 }
                 else if(tictac[2][0] == 'O')
                 {
                     tictac[2][0] = 'X';
-                    [button3_1_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                    [button3_1_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                 }
                 else if(tictac[2][0] == '-')
                 {
                     tictac[2][0] = 'O';
-                    [button3_1_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState:UIControlStateDisabled];
+                    [button3_1_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState:UIControlStateDisabled];
                 }
                 break;
             case 320:
                 if(tictac[2][1] == 'X')
                 {
                     tictac[2][1] = '-';
-                    [button3_2_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState: UIControlStateDisabled];
+                    [button3_2_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState: UIControlStateDisabled];
                 }
                 else if(tictac[2][1] == 'O')
                 {
                     tictac[2][1] = 'X';
-                    [button3_2_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                    [button3_2_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                 }
                 else if(tictac[2][1] == '-')
                 {
                     tictac[2][1] = 'O';
-                    [button3_2_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState:UIControlStateDisabled];
+                    [button3_2_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState:UIControlStateDisabled];
                 }
                 break;
             case 330:
                 if(tictac[2][2] == 'X')
                 {
                     tictac[2][2] = '-';
-                    [button3_3_Out setBackgroundImage:[UIImage imageNamed:@"XObackgroundWithXO.png"] forState: UIControlStateDisabled];
+                    [button3_3_Out setBackgroundImage:[UIImage imageNamed:buttonBackStr] forState: UIControlStateDisabled];
                 }
                 else if(tictac[2][2] == 'O')
                 {
                     tictac[2][2] = 'X';
-                    [button3_3_Out setBackgroundImage:[UIImage imageNamed:@"X.png"] forState:UIControlStateDisabled];
+                    [button3_3_Out setBackgroundImage:[UIImage imageNamed:buttonXStr] forState:UIControlStateDisabled];
                 }
                 else if(tictac[2][2] == '-')
                 {
                     tictac[2][2] = 'O';
-                    [button3_3_Out setBackgroundImage:[UIImage imageNamed:@"O.png"] forState:UIControlStateDisabled];
+                    [button3_3_Out setBackgroundImage:[UIImage imageNamed:buttonOStr] forState:UIControlStateDisabled];
                 }
                 break;
             default:

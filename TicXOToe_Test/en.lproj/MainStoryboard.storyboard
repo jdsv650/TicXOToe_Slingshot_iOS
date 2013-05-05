@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5eL-3Z-Wke">
-                                <rect key="frame" x="68" y="148" width="204" height="44"/>
+                                <rect key="frame" x="68" y="178" width="204" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title=" 1 Player" image="computer.png">
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="njn-f7-kKB">
-                                <rect key="frame" x="68" y="214" width="204" height="44"/>
+                                <rect key="frame" x="68" y="253" width="204" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title=" 2 Player" image="group.png">
@@ -43,10 +43,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aex-hf-gRK">
-                                <rect key="frame" x="68" y="280" width="204" height="44"/>
+                                <rect key="frame" x="68" y="328" width="204" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title=" 2 Player Slingshot" image="slingshot_tiny.jpeg">
+                                <state key="normal" title=" Slingshot" image="slingshot_tiny.jpeg">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -57,12 +57,12 @@
                                     <segue destination="2" kind="modal" id="cQ5-Sv-JVu"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TicXOToe.png" id="BqR-6h-s1V">
-                                <rect key="frame" x="20" y="-74" width="280" height="280"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ticxotoe.png" id="BqR-6h-s1V">
+                                <rect key="frame" x="0.0" y="55" width="320" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="beanbag.png" id="6lF-xR-F1u">
-                                <rect key="frame" x="215" y="311" width="85" height="85"/>
+                                <rect key="frame" x="215" y="361" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -85,7 +85,7 @@
                                 <rect key="frame" x="20" y="36" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackgroundWithXO.png">
+                                <state key="normal" backgroundImage="poolWaterWithXO.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -97,10 +97,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="120" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ps8-bw-GLf">
-                                <rect key="frame" x="115" y="36" width="85" height="85"/>
+                                <rect key="frame" x="118" y="36" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackgroundWithXO.png"/>
+                                <state key="normal" backgroundImage="poolWaterWithXO.png"/>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -109,10 +109,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="130" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rM1-pl-3kO">
-                                <rect key="frame" x="210" y="36" width="85" height="85"/>
+                                <rect key="frame" x="215" y="36" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackgroundWithXO.png">
+                                <state key="normal" backgroundImage="poolWaterWithXO.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -127,7 +127,7 @@
                                 <rect key="frame" x="20" y="134" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackgroundWithXO.png">
+                                <state key="normal" backgroundImage="poolWaterWithXO.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -139,10 +139,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="220" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xfY-re-Cwe">
-                                <rect key="frame" x="115" y="134" width="85" height="85"/>
+                                <rect key="frame" x="118" y="134" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackgroundWithXO.png">
+                                <state key="normal" backgroundImage="poolWaterWithXO.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -154,10 +154,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="230" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pXu-S2-UlW">
-                                <rect key="frame" x="210" y="134" width="85" height="85"/>
+                                <rect key="frame" x="215" y="134" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackgroundWithXO.png">
+                                <state key="normal" backgroundImage="poolWaterWithXO.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -172,7 +172,7 @@
                                 <rect key="frame" x="20" y="231" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackgroundWithXO.png">
+                                <state key="normal" backgroundImage="poolWaterWithXO.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -184,10 +184,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="320" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cZP-Rr-Q8B">
-                                <rect key="frame" x="115" y="231" width="85" height="85"/>
+                                <rect key="frame" x="118" y="231" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackgroundWithXO.png">
+                                <state key="normal" backgroundImage="poolWaterWithXO.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -199,10 +199,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="330" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6ig-9I-nob">
-                                <rect key="frame" x="210" y="231" width="85" height="85"/>
+                                <rect key="frame" x="215" y="231" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackgroundWithXO.png">
+                                <state key="normal" backgroundImage="poolWaterWithXO.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -213,20 +213,6 @@
                                     <action selector="getUserMove:" destination="2" eventType="touchUpInside" id="lMi-0H-xvI"/>
                                 </connections>
                             </button>
-                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="hGV-8b-1j0">
-                                <rect key="frame" x="214" y="356" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="versusComputer:" destination="2" eventType="valueChanged" id="ZBc-z6-1xs"/>
-                                </connections>
-                            </switch>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Versus Computer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zjI-TL-HaY">
-                                <rect key="frame" x="34" y="356" width="161" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="beanbag.png" id="v4v-ns-VZK">
                                 <rect key="frame" x="20" y="391" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -235,8 +221,8 @@
                                 <rect key="frame" x="130" y="330" width="54" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kH9-ZQ-tBm">
-                                <rect key="frame" x="20" y="0.0" width="44" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kH9-ZQ-tBm">
+                                <rect key="frame" x="20" y="407" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="arrow-turn-180.png">
@@ -276,15 +262,15 @@
         <scene sceneID="o49-sf-wSE">
             <objects>
                 <viewController id="vmz-sL-dGz" customClass="MMRegularViewController" sceneMemberID="viewController">
-                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zb4-hu-h9F">
+                    <view key="view" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zb4-hu-h9F">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bbb-vB-aAy">
-                                <rect key="frame" x="20" y="92" width="85" height="85"/>
+                                <rect key="frame" x="20" y="35.5" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackground.png">
+                                <state key="normal" backgroundImage="poolWater.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -296,10 +282,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A9S-B5-vlb">
-                                <rect key="frame" x="115" y="92" width="85" height="85"/>
+                                <rect key="frame" x="118" y="35.5" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackground.png"/>
+                                <state key="normal" backgroundImage="poolWater.png"/>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -308,10 +294,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JJe-jA-5Q6">
-                                <rect key="frame" x="210" y="92" width="85" height="85"/>
+                                <rect key="frame" x="215" y="35.5" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackground.png">
+                                <state key="normal" backgroundImage="poolWater.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -323,10 +309,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HfB-Rw-c63">
-                                <rect key="frame" x="20" y="190" width="85" height="85"/>
+                                <rect key="frame" x="20" y="133.5" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackground.png">
+                                <state key="normal" backgroundImage="poolWater.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -338,10 +324,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aU9-lh-gaZ">
-                                <rect key="frame" x="115" y="190" width="85" height="85"/>
+                                <rect key="frame" x="118" y="133" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackground.png">
+                                <state key="normal" backgroundImage="poolWater.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -353,10 +339,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gQs-26-PUE">
-                                <rect key="frame" x="210" y="190" width="85" height="85"/>
+                                <rect key="frame" x="215" y="133.5" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackground.png">
+                                <state key="normal" backgroundImage="poolWater.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -368,10 +354,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dkX-C7-mgl">
-                                <rect key="frame" x="20" y="287" width="85" height="85"/>
+                                <rect key="frame" x="20" y="231.5" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackground.png">
+                                <state key="normal" backgroundImage="poolWater.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -383,10 +369,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j8v-hj-bo5">
-                                <rect key="frame" x="115" y="287" width="85" height="85"/>
+                                <rect key="frame" x="118" y="231.5" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackground.png">
+                                <state key="normal" backgroundImage="poolWater.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -398,10 +384,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pi4-f6-LJd">
-                                <rect key="frame" x="210" y="287" width="85" height="85"/>
+                                <rect key="frame" x="215" y="231.5" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="XObackground.png">
+                                <state key="normal" backgroundImage="poolWater.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -412,42 +398,40 @@
                                     <action selector="getUserMove:" destination="vmz-sL-dGz" eventType="touchUpInside" id="ACR-oa-rrN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YUK-k0-EAC">
-                                <rect key="frame" x="20" y="20" width="44" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YUK-k0-EAC">
+                                <rect key="frame" x="20" y="407.5" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" backgroundImage="arrow-turn-180.png">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="vmz-sL-dGz" eventType="touchUpInside" id="GCV-Qf-JWd"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" id="CyB-di-t1p">
-                                <rect key="frame" x="168" y="36" width="132" height="30"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="CyB-di-t1p">
+                                <rect key="frame" x="94" y="368" width="132" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="" image="eye-close.png" width="43.5"/>
-                                    <segment title="" image="eye-half.png"/>
-                                    <segment title="" image="eye.png"/>
+                                    <segment title="" image="star.png" width="43.5"/>
+                                    <segment title="" image="stars2.png"/>
+                                    <segment title="" image="stars3.png"/>
                                 </segments>
                                 <connections>
                                     <action selector="levelSelected:" destination="vmz-sL-dGz" eventType="valueChanged" id="E3l-bS-05s"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fqD-qL-aEu">
-                                <rect key="frame" x="168" y="7" width="127" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fqD-qL-aEu">
+                                <rect key="frame" x="97" y="419" width="127" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="button1_1_Outlet" destination="bbb-vB-aAy" id="wLg-AS-Pd2"/>
@@ -470,18 +454,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TicXOToe.png" width="280" height="280"/>
-        <image name="XObackground.png" width="85" height="85"/>
-        <image name="XObackgroundWithXO.png" width="85" height="85"/>
         <image name="arrow-turn-180.png" width="16" height="16"/>
         <image name="beanbag.png" width="45" height="44"/>
         <image name="computer.png" width="16" height="16"/>
-        <image name="eye-close.png" width="16" height="16"/>
-        <image name="eye-half.png" width="16" height="16"/>
-        <image name="eye.png" width="16" height="16"/>
         <image name="group.png" width="16" height="16"/>
+        <image name="poolWater.png" width="85" height="85"/>
+        <image name="poolWaterWithXO.png" width="85" height="85"/>
         <image name="slingshot1.png" width="54" height="80"/>
         <image name="slingshot_tiny.jpeg" width="23" height="35"/>
+        <image name="star.png" width="30" height="30"/>
+        <image name="stars2.png" width="30" height="30"/>
+        <image name="stars3.png" width="30" height="30"/>
+        <image name="ticxotoe.png" width="320" height="85"/>
     </resources>
     <classes>
         <class className="MMMainViewController" superclassName="UIViewController">
@@ -493,6 +477,7 @@
                 <relationship kind="action" name="backButton:"/>
                 <relationship kind="action" name="getUserMove:"/>
                 <relationship kind="action" name="levelSelected:"/>
+                <relationship kind="action" name="versusComputer:"/>
                 <relationship kind="outlet" name="button1_1_Outlet" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button1_2_Outlet" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button1_3_Outlet" candidateClass="UIButton"/>
