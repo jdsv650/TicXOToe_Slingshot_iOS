@@ -44,7 +44,7 @@ int row,col;
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"beachsand.png"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"beachsand4.png"]];
 
     
     buttonBackStr = @"poolWater.png";

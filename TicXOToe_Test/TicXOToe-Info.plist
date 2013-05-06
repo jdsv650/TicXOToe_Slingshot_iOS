@@ -16,8 +16,8 @@
 			<array>
 				<string>xo_standard.png</string>
 				<string>xo_retina@2x.png</string>
-				<string>xo_standard_IPad@2x.png</string>
 				<string>xo_retina_iPad@2x.png</string>
+				<string>xo_standard_IPad.png</string>
 			</array>
 		</dict>
 	</dict>
